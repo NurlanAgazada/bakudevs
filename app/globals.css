@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Lora;
+  src: url(../public/Fonts/Lora-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url(../public/Fonts/Mulish-VariableFont_wght.ttf);
+}
+
+@theme{
+  --color-first:#008D96;
+  --color-second:#F5AF15;
+  --color-third:#1B2221;
+  --color-fourth:#EFF1F1;
+  --font-lora:Lora;
+  --font-mulish:Mulish;
+}
+
