@@ -1,66 +1,19 @@
 "use client"
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import Aboutcard from "@/components/shared/Aboutcard";
 import Button from "@/components/shared/Button";
 import Card from "@/components/shared/Card";
+import MapCard from "@/components/shared/MapCard";
 import Hero from "@/components/ui/Hero";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function Home() {
 
-  const courses = [
-    {
-      id:0,
-      img:"./Js.svg",
-      numLesson:"18",
-      lesson:"Frontend"
-    },
-    {
-      id:1,
-      img:"./Phpmysql.svg",
-      numLesson:"20",
-      lesson:"Backend"
-    },
-        {
-      id:2,
-      img:"./Rectangle 50.svg",
-      numLesson:"23",
-      lesson:"UI/UX"
-    },
-      {
-      id:3,
-      img:"./Rectangle 51.svg",
-      numLesson:"12",
-      lesson:"Backend"
-    },
-    {
-      id:4,
-      img:"./Rectangle 59.svg",
-      numLesson:"10",
-      lesson:"Frontend"
-    },
-    {
-      id:4,
-      img:"./Rectangle 59.svg",
-      numLesson:"10",
-      lesson:"Frontend"
-    },
-    {
-      id:4,
-      img:"./Rectangle 59.svg",
-      numLesson:"10",
-      lesson:"Frontend"
-    },
-    {
-      id:4,
-      img:"./Rectangle 59.svg",
-      numLesson:"10",
-      lesson:"Frontend"
-    }
-  ]
-
+  
   return (
     <div className="bg-[#FAFDFD]">
       <div className="w-full bg-[url(/bg.svg)] bg-no-repeat h-screen bg-center bg-cover -z-10">
@@ -74,25 +27,15 @@ export default function Home() {
         <h2 className="font-lora text-3xl">Populyar Kurslar</h2>
         <div className="flex gap-5">
           <Button title={"Hamısı"} bgColor={"#008D96"} textColor={"#FFFFFF"} />
-          <Button title={"Backend"} onClick={()=>console.log("Salam")} bgColor={"#FFFFFF"} textColor={"#008D96"} />
-          <Button
-            title={"Frontend"}
-            bgColor={"#FFFFFF"}
-            textColor={"#008D96"}
-          />
+          <Button title={"Backend"} bgColor={"#FFFFFF"} textColor={"#008D96"} />
+          <Button title={"Frontend"} bgColor={"#FFFFFF"} textColor={"#008D96"}/>
           <Button title={"UI/UX"} bgColor={"#FFFFFF"} textColor={"#008D96"} />
         </div>
       </div>
 
       <div className="flex w-250 mx-auto justify-between items-center gap-5 flex-wrap">
 
-    {
-      courses.map(({id,img,numLesson,lesson})=>(
-                <Link key={id} href={`/courses/course/${lesson}`}>
-                <Card  img={img} numLesson={numLesson} lesson={lesson} />
-                </Link>
-      ))
-    }
+    <MapCard count={8}/>
       </div>
 
       <div className="flex py-10 justify-center items-center">
@@ -125,30 +68,30 @@ export default function Home() {
             bgColor={"#F57170"}
           />
           <Aboutcard
-            img={"./play.svg"}
-            textHeader={"Video və Yazılı format"}
+            img={"./tvl.svg"}
+            textHeader={"Tapşırıqlar və layihələr"}
             textABout={
-              "Bizim saytımızda siz dərslərə həm video formatında, həm də yazılı izah formatında rahat baxa bilərsiniz "
+              "Hər dərsin və kursun sonunda sizə tapşırıqlar və layihələr veriləcək. Siz onları yerinə yetirərək, praktik təcrübənizi artıracaqsınız və portfolionuzu yaratmış olacaqsınız"
             }
-            bgColor={"#64B7F4"}
+            bgColor={"#46AB99"}
           />
           </div>
           <div className="flex flex-col gap-5 py-10">
             <Aboutcard
-            img={"./akar-icons_money.svg"}
-            textHeader={"Sərfəli qiymət"}
-            textABout={
-              "Ayda cəmi 10 AZN ödəniş etməklə saytdımızdaki bütün kurslar sizin üçün tam açıq olacaq!"
-            }
-            bgColor={"#F57170"}
-          />
-          <Aboutcard
             img={"./play.svg"}
             textHeader={"Video və Yazılı format"}
             textABout={
-              "Bizim saytımızda siz dərslərə həm video formatında, həm də yazılı izah formatında rahat baxa bilərsiniz "
+              "Bizim saytımızda siz dərslərə həm video formatında, həm də yazılı izah formatında rahat baxa bilərsiniz"
             }
             bgColor={"#64B7F4"}
+          />
+          <Aboutcard
+            img={"./tabler_certificate.svg"}
+            textHeader={"Sertifikat veririk"}
+            textABout={
+              "Siz bizim saytımızda hər hansı bir kursu bitirdikdən sonra, avtomatik olaraq BakuDevs sertifikatı əldə edəcəksiniz. Bu sertifikat sizin bilik və bacarıqlarınızı təsdiq edəcək"
+            }
+            bgColor={"#FFAE01"}
           />
           </div>
             </div>
@@ -173,6 +116,8 @@ export default function Home() {
           
         </div>
       </div>
+    
+      <Footer/>          
     </div>
   );
 }

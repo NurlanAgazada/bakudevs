@@ -1,11 +1,51 @@
-{
-
-    "courses":[
-        {
-
-        }
-    ],
-    "users":[
-        
-    ]
-}
+{"courses": [
+  {
+    "id": 0,
+    "img": "/Js.svg",
+    "numLesson": "18",
+    "lesson": "Frontend"
+  },
+  {
+    "id": 1,
+    "img": "/Phpmysql.svg",
+    "numLesson": "20",
+    "lesson": "Backend"
+  },
+  {
+    "id": 2,
+    "img": "/Rectangle 50.svg",
+    "numLesson": "23",
+    "lesson": "UI-UX"
+  },
+  {
+    "id": 3,
+    "img": "/Rectangle 51.svg",
+    "numLesson": "12",
+    "lesson": "Backend"
+  },
+  {
+    "id": 4,
+    "img": "/Rectangle 59.svg",
+    "numLesson": "10",
+    "lesson": "Frontend"
+  },
+  {
+    "id": 5,
+    "img": "/Rectangle 60.svg",
+    "numLesson": "10",
+    "lesson": "Frontend"
+  },
+  {
+    "id": 6,
+    "img": "/Rectangle 61.svg",
+    "numLesson": "10",
+    "lesson": "Frontend"
+  },
+  {
+    "id": 7,
+    "img": "/Rectangle 71.svg",
+    "numLesson": "10",
+    "lesson": "Frontend"
+  }
+  
+]}

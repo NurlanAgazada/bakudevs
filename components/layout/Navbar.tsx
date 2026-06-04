@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='w-250 flex mx-auto justify-between items-center'>
         <Image 
-        src={"./Frame.svg"}
+        src={"/Frame.svg"}
         width={150}
         height={150}
         alt=''
@@ -40,8 +40,6 @@ const Navbar = () => {
             <LuClipboardPen/>
             <Link href={""}>Qeydiyyatdan Keç</Link>
           </div>
-          
-          {/* <Button title={"Qeydiyyatdan keç"} bgColor={"first"}/> */}
         </div>
     </div>
   )
