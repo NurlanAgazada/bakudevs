@@ -10,8 +10,9 @@ const Button = ({title,bgColor,textColor,Icon}) => {
           style={{
             backgroundColor:bgColor,
             color:textColor
+            
           }}
-          className='flex justify-center items-center gap-2 text-xl rounded-3xl px-10 py-2 border text-center w-fit'>
+          className='flex justify-center items-center gap-2 text-xl rounded-3xl px-10 py-2 border text-center w-fit cursor-pointer'>
             <h1>{title}</h1>
             {Icon && <Icon/>}
             

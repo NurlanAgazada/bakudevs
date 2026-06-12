@@ -12,6 +12,10 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import React, { useState } from 'react';
 import MapCard from '@/components/shared/MapCard';
 import CourseLessons from '@/components/shared/CourseLessons';
+import { GoClock } from "react-icons/go";
+import { IoIosLock } from "react-icons/io";
+
+
 
 
 
@@ -29,8 +33,7 @@ const CourseSingle = () => {
   ];
   return (
     <div className='flex flex-col gap-5 bg-[#FAFDFD]'>
-      <Navbar/>
-      <Header/>
+      <Header title={"Android Program Development"}/>
       <div className='w-250 mx-auto'>
         <div className='flex items-center gap-7 font-thin text-sm py-5'>
           <p className=''>Əsas səhifə</p>
@@ -150,7 +153,32 @@ const CourseSingle = () => {
           {[...Array(4)].map((_, index) => (
             <CourseLessons key={index} />
           ))}
+          <div className='border p-3 border-gray-300 bg-amber-100'>
+              <div className='flex gap-5'>
+                <IoIosLock className='relative top-1.4 text-2xl text-[#C89F9F]'/>
+                <div className='flex flex-col gap-2'>
+                  <p className='w-70 font-semibold text-lg'># 1 - Android-də çat proqramının yaradılması</p>
+                    <div className='flex gap-2 items-center'>
+                      <GoClock/>
+                      <p>12 dəq</p>
+                    </div>
+                </div>
+              </div> 
           </div>
+          <div className='border p-3 border-gray-300 bg-amber-100'>
+              <div className='flex gap-5'>
+                <IoIosLock className='relative top-1.4 text-2xl text-[#C89F9F]'/>
+                <div className='flex flex-col gap-2'>
+                  <p className='w-70 font-semibold text-lg'># 1 - Android-də çat proqramının yaradılması</p>
+                    <div className='flex gap-2 items-center'>
+                      <GoClock/>
+                      <p>12 dəq</p>
+                    </div>
+                </div>
+              </div> 
+          </div>
+        </div>
+
         </div>
         <div className='py-7 flex flex-col gap-5'>
           <p className='font-semibold text-xl'>Oxşar kurslar</p>
@@ -158,7 +186,6 @@ const CourseSingle = () => {
         </div>
       </div>
 
-      <Footer/>      
     </div>
   )
 }

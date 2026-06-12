@@ -13,7 +13,7 @@ const MapCard = ({count}) => {
     fetch("http://localhost:3001/courses").then((res)=>res.json()).then((data)=>setData(data))
   },[])
   return (
-    <div className='flex w-250 flex-wrap justify-between gap-7'>
+    <div className='flex w-250 flex-wrap justify-between gap-5'>
         {
       data.map(({id,img,numLesson,lesson})=>(
                 id <= count ?<Link key={id} href={`/courses/course/${lesson}`}>

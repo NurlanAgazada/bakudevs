@@ -1,55 +1,11 @@
-"use client"
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-import Aboutcard from "@/components/shared/Aboutcard";
-import Button from "@/components/shared/Button";
-import Card from "@/components/shared/Card";
-import MapCard from "@/components/shared/MapCard";
-import Hero from "@/components/ui/Hero";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
+import Image from 'next/image'
+import React from 'react'
+import Aboutcard from './Aboutcard'
 
-export default function Home() {
-
-  
+const AboutDiv = () => {
   return (
-    <div className="bg-[#FAFDFD]">
-      <div className="w-full bg-[url(/bg.svg)] bg-no-repeat h-screen bg-center bg-cover -z-10">
-        <div className="flex w-250 mx-auto justify-between items-center flex-wrap">
-          <Hero/>
-        </div>
-      </div>
-
-      <div className="flex w-250 mx-auto justify-between items-center py-10">
-        <h2 className="font-lora text-3xl">Populyar Kurslar</h2>
-        <div className="flex gap-5">
-          <Button title={"Hamısı"} bgColor={"#008D96"} textColor={"#FFFFFF"} />
-          <Button title={"Backend"} bgColor={"#FFFFFF"} textColor={"#008D96"} />
-          <Button title={"Frontend"} bgColor={"#FFFFFF"} textColor={"#008D96"}/>
-          <Button title={"UI/UX"} bgColor={"#FFFFFF"} textColor={"#008D96"} />
-        </div>
-      </div>
-
-      <div className="flex w-250 mx-auto justify-between items-center gap-5 flex-wrap">
-
-    <MapCard count={7}/>
-      </div>
-
-      <div className="flex py-10 justify-center items-center">
-      <Link href="/courses">
-      <Button
-          title={"Bütün kurslar"}
-          bgColor={"#008D96"}
-          textColor={"#FFFFFF"}
-          Icon={IoIosArrowForward}
-        />
-      </Link>
-        
-      </div>
-
-      <div className="bg-[#E3F1F2]">
+    <div>
+        <div className="bg-[#E3F1F2]">
         <div className="w-250 mx-auto py-20 flex flex-col gap-5 font-mulish">
           <p className="text-3xl font-semibold font-lora">
             BakuDevs ilə istədiyiniz biliklərə sahib olun!
@@ -118,7 +74,8 @@ export default function Home() {
           
         </div>
       </div>
-    
     </div>
-  );
+  )
 }
+
+export default AboutDiv

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from 'next/link';
 
 
 
@@ -29,10 +30,18 @@ const Footer = () => {
 
         <div>
           <ul className='flex flex-col gap-3 list-disc'>
+            <Link href="/">
             <li>Əsas səhifə</li>
+            </Link>
+            <Link href="/courses">
             <li>Kurslar</li>
+            </Link>
+            <Link href="/about">
             <li>Haqqımızda</li>
+            </Link>
+            <Link href="/contact">
             <li>Əlaqə</li>
+            </Link>
           </ul>
         </div>
 

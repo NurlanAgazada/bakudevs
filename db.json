@@ -3,7 +3,7 @@
     "id": 0,
     "img": "/Js.svg",
     "numLesson": "18",
-    "lesson": "Frontend"
+    "lesson": "UI-UX"
   },
   {
     "id": 1,
@@ -33,19 +33,42 @@
     "id": 5,
     "img": "/Rectangle 60.svg",
     "numLesson": "10",
-    "lesson": "Frontend"
+    "lesson": "Backend"
   },
   {
     "id": 6,
     "img": "/Rectangle 61.svg",
     "numLesson": "10",
-    "lesson": "Frontend"
+    "lesson": "UI-UX"
   },
   {
     "id": 7,
     "img": "/Rectangle 71.svg",
     "numLesson": "10",
+    "lesson": "Backend"
+  },
+  {
+    "id": 8,
+    "img": "/Rectangle 71.svg",
+    "numLesson": "10",
     "lesson": "Frontend"
+  },
+  {
+    "id": 9,
+    "img": "/Rectangle 71.svg",
+    "numLesson": "10",
+    "lesson": "Frontend"
+  },
+  {
+    "id": 10,
+    "img": "/Rectangle 71.svg",
+    "numLesson": "10",
+    "lesson": "Backend"
+  },
+  {
+    "id": 11,
+    "img": "/Rectangle 71.svg",
+    "numLesson": "10",
+    "lesson": "UI-UX"
   }
-  
 ]}
